@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>
+        <p>Navigation:</p> 
+        <a href="/main">main</a>
+        <a href="/news">news</a>
+        <a href="/management">management</a>
+        <a href="/about">about</a>
+        <a href="/contacts">contacts</a>
+        <a href="/branches">branches</a>
+        <a href="/branches/London">branches/London</a>
+    </span>
+    {% if city_name %}
+        <h1>{{ city_name }}</h1>
+    {% else %}
+        <h1>No city name provided.</h1>
+    {% endif %}
+</body>
+</html>
